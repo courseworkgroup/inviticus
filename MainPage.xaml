@@ -56,8 +56,8 @@
                     </phone:LongListSelector.ItemTemplate>
                 </phone:LongListSelector>-->
                 <StackPanel>
-                    <TextBlock Text="profiles" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" />
-                    <TextBlock Text="immunizations" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="TextBlock_Tap" />
+                    <TextBlock Text="profile" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Profile_Tap"/>
+                    <TextBlock Text="immunizations" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Immunization_Tap" />
                     <TextBlock Text="development charts" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}"  />
                 </StackPanel>
             </phone:PanoramaItem>

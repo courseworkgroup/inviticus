@@ -61,9 +61,15 @@ namespace PanoramaApp1
             NavigationService.Navigate(new Uri("/Settings.xaml", UriKind.RelativeOrAbsolute));
         }
 
-        private void TextBlock_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        private void Immunization_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Immunization.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+     
+        private void Profile_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Profile.xaml", UriKind.RelativeOrAbsolute));
         }
 
         

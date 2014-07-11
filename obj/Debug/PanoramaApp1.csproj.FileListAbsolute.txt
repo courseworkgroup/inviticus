@@ -23,3 +23,4 @@ C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\Panor
 C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\PanoramaApp1.csprojResolveAssemblyReference.cache
 C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\Immunization.g.cs
 C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\ImmunizationDetails.g.cs
+C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\Profile.g.cs

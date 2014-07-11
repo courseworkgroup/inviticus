@@ -15,6 +15,17 @@ namespace PanoramaApp1
         public Profile()
         {
             InitializeComponent();
+           // BuildLocalizedApplicationBar();
         }
+
+        //public void BuildLocalizedApplicationBar()
+        //{
+        //    ApplicationBar = new ApplicationBar();
+        //    ApplicationBarIconButton edit = new ApplicationBarIconButton();
+        //    edit.IconUri = new Uri("/Assets/Icons/edit.png", UriKind.RelativeOrAbsolute);
+        //    ApplicationBar.Buttons.Add(edit);
+
+
+        //}
     }
 }

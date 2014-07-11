@@ -22,13 +22,43 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="profile" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <StackPanel>
+                <Image Source="assets/panoramabackground.png" Height="200" Width="200" HorizontalAlignment="Left" Margin="12"/>
+                <ScrollViewer>
+                    <StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Name" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                        <TextBlock Text="Abigail Kisakye" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
+                    </StackPanel>
+                    <StackPanel>
+                            <TextBlock Text="Date of Birth" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="12/05/2014" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
+                    </StackPanel>
+                    <StackPanel>
+                            <TextBlock Text="Weight at Birth" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="2.6 Kgs" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
+                    </StackPanel>
+                    <StackPanel>
+                            <TextBlock Text="Sex" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="Female" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
+                    </StackPanel>
+                    <StackPanel>
+                            <TextBlock Text="Father" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="David Gaamuwa" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
+                    </StackPanel>
+                    <StackPanel>
+                            <TextBlock Text="Mother" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="Robinah Gaamuwa" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
+                    </StackPanel>
+            </StackPanel>
+            </ScrollViewer>
+            </StackPanel>
         </Grid>
     </Grid>
 
