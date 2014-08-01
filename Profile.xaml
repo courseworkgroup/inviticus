@@ -33,27 +33,27 @@
                     <Image Source="assets/panoramabackground.png" Height="200" Width="200" HorizontalAlignment="Left" Margin="12"/>
                     <StackPanel>
                         <StackPanel>
-                            <TextBlock Text="Name" TextWrapping="Wrap" Margin="10,10,0,0"/>
-                            <TextBlock Text="Abigail Kisakye" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
+                            <TextBlock Text="Name" TextWrapping="Wrap" FontSize="{StaticResource PhoneFontSizeLarge}" Margin="10,10,0,0"/>
+                            <TextBlock Text="Abigail Kisakye" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" />
                         </StackPanel>
                         <StackPanel Margin="0,15,0,0">
-                            <TextBlock Text="Date of Birth" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="Date of Birth" TextWrapping="Wrap" FontSize="{StaticResource PhoneFontSizeLarge}" Margin="10,10,0,0"/>
                             <TextBlock Text="12/05/2014" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
                         </StackPanel>
                         <StackPanel Margin="0,15,0,0">
-                            <TextBlock Text="Weight at Birth" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="Weight at Birth" TextWrapping="Wrap" FontSize="{StaticResource PhoneFontSizeLarge}" Margin="10,10,0,0"/>
                             <TextBlock Text="2.6 Kgs" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
                         </StackPanel>
                         <StackPanel Margin="0,15,0,0">
-                            <TextBlock Text="Sex" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="Sex" TextWrapping="Wrap" FontSize="{StaticResource PhoneFontSizeLarge}" Margin="10,10,0,0"/>
                             <TextBlock Text="Female" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
                         </StackPanel>
                         <StackPanel Margin="0,15,0,0">
-                            <TextBlock Text="Father" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="Father" TextWrapping="Wrap" FontSize="{StaticResource PhoneFontSizeLarge}" Margin="10,10,0,0"/>
                             <TextBlock Text="David Gaamuwa" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
                         </StackPanel>
                         <StackPanel Margin="0,15,0,0">
-                            <TextBlock Text="Mother" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="Mother" TextWrapping="Wrap" FontSize="{StaticResource PhoneFontSizeLarge}" Margin="10,10,0,0"/>
                             <TextBlock Text="Robinah Gaamuwa" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
                         </StackPanel>
                     </StackPanel>

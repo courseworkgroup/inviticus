@@ -75,16 +75,16 @@ namespace PanoramaApp1
             NavigationService.Navigate(new Uri("/Profile.xaml", UriKind.RelativeOrAbsolute));
         }
 
+        private void Weight_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Weight.xaml", UriKind.RelativeOrAbsolute));
+        }
+
         public void background(BitmapImage bitmapImage)
         {
             ImageBrush imageBrush = new ImageBrush();
             imageBrush.ImageSource = bitmapImage;
             this.panorama.Background = imageBrush;
-        }
-
-        private void Charts_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/Charts.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }

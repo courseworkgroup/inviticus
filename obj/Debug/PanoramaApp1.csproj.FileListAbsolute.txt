@@ -25,4 +25,4 @@ C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\Panor
 C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\ImmunizationDetails.g.cs
 C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\Profile.g.cs
 C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\Assets\Icons\edit.png
-C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\Charts.g.cs
+C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\Weight.g.cs

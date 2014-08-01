@@ -57,9 +57,11 @@
                 <StackPanel>
                     <TextBlock Text="profile" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Profile_Tap"/>
                     <TextBlock Text="tap to view the baby's profile" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                    <TextBlock Text="weight" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Weight_Tap"/>
+                    <TextBlock Text="tap to add weight for the child" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
                     <TextBlock Text="immunizations" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Immunization_Tap" />
                     <TextBlock Text="tap to view the immunization status" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
-                    <TextBlock Text="development charts" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Charts_Tap"  />
+                    <TextBlock Text="development charts" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" />
                     <TextBlock Text="tap to view the weight and development charts" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
                 </StackPanel>
             </phone:PanoramaItem>
