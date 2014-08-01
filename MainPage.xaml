@@ -37,10 +37,9 @@
          -->
 
          <!--Panorama control-->
-        <phone:Panorama Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}">
+        <phone:Panorama Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Name="panorama">
             <phone:Panorama.Background>
-               <SolidColorBrush Color="Transparent"/>
-                <!--<ImageBrush ImageSource="/PanoramaApp1;component/Assets/PanoramaBackground.png"/>-->
+                <ImageBrush ImageSource="/Assets/Photo0277_edited.jpg" Stretch="Fill"/>
             </phone:Panorama.Background>
 
             <!--Panorama item one-->
@@ -56,9 +55,12 @@
                     </phone:LongListSelector.ItemTemplate>
                 </phone:LongListSelector>-->
                 <StackPanel>
-                    <TextBlock Text="profile" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Profile_Tap"/>
-                    <TextBlock Text="immunizations" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Immunization_Tap" />
-                    <TextBlock Text="development charts" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}"  />
+                    <TextBlock Text="profile" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Profile_Tap"/>
+                    <TextBlock Text="tap to view the baby's profile" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                    <TextBlock Text="immunizations" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Immunization_Tap" />
+                    <TextBlock Text="tap to view the immunization status" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                    <TextBlock Text="development charts" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Charts_Tap"  />
+                    <TextBlock Text="tap to view the weight and development charts" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
                 </StackPanel>
             </phone:PanoramaItem>
 
@@ -88,8 +90,8 @@
                                 the top line shows the date and the bottom should show preview information/name of the event-->
                                <!-- <Border BorderThickness="1" Width="99" Height="99" BorderBrush="#FFFFC700" Background="#FFFFC700"/>-->
                                 <StackPanel Width="311" Margin="8,-7,0,0">
-                                    <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Margin="10,0" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeLarge}" />
-                                    <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextSubtleStyle}" />
+                                    <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Margin="10,0" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeLarge}" />
+                                    <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextContrastStyle}" />
                                 </StackPanel>
                             </StackPanel>
                         </DataTemplate>
@@ -108,8 +110,8 @@
                                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,9,0,0">
                                     <Border Background="{StaticResource PhoneAccentBrush}" Height="99" Width="99" Margin="12,0,0,0"/>
                                     <StackPanel>
-                                        <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Margin="10,0" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeLarge}"/>
-                                        <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextNormalStyle}"/>
+                                        <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Margin="10,0" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeLarge}"/>
+                                        <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextContrastStyle}"/>
                                     </StackPanel>
                                 </StackPanel>
                             </DataTemplate>
@@ -130,14 +132,12 @@
         <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
 
     </Grid>
-   <!-- <phone:PhoneApplicationPage.ApplicationBar >
-        <shell:ApplicationBar IsVisible="True" Opacity="12" Mode="Minimized">
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="settings"/>
-                <shell:ApplicationBarMenuItem Text="about"/>
-                <shell:ApplicationBarMenuItem Text="registration"/>
-            </shell:ApplicationBar.MenuItems>
+    <phone:PhoneApplicationPage.ApplicationBar >
+        <shell:ApplicationBar IsVisible="True" Opacity="12">
+            <shell:ApplicationBar.Buttons>
+                <shell:ApplicationBarIconButton IconUri="/Assets/Icons/feature.settings.png" Text="settings" Click="settings_Click"/>
+            </shell:ApplicationBar.Buttons>
         </shell:ApplicationBar>
-                              
-    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+    </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>

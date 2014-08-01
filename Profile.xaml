@@ -14,7 +14,7 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="SkyBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -28,38 +28,45 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
             <StackPanel>
-                <Image Source="assets/panoramabackground.png" Height="200" Width="200" HorizontalAlignment="Left" Margin="12"/>
-                <ScrollViewer>
+                    <Image Source="assets/panoramabackground.png" Height="200" Width="200" HorizontalAlignment="Left" Margin="12"/>
                     <StackPanel>
-                    <StackPanel>
-                        <TextBlock Text="Name" TextWrapping="Wrap" Margin="10,10,0,0"/>
-                        <TextBlock Text="Abigail Kisakye" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
-                    </StackPanel>
-                    <StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="Name" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="Abigail Kisakye" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
+                        </StackPanel>
+                        <StackPanel Margin="0,15,0,0">
                             <TextBlock Text="Date of Birth" TextWrapping="Wrap" Margin="10,10,0,0"/>
                             <TextBlock Text="12/05/2014" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
-                    </StackPanel>
-                    <StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="0,15,0,0">
                             <TextBlock Text="Weight at Birth" TextWrapping="Wrap" Margin="10,10,0,0"/>
                             <TextBlock Text="2.6 Kgs" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
-                    </StackPanel>
-                    <StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="0,15,0,0">
                             <TextBlock Text="Sex" TextWrapping="Wrap" Margin="10,10,0,0"/>
                             <TextBlock Text="Female" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
-                    </StackPanel>
-                    <StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="0,15,0,0">
                             <TextBlock Text="Father" TextWrapping="Wrap" Margin="10,10,0,0"/>
                             <TextBlock Text="David Gaamuwa" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
-                    </StackPanel>
-                    <StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="0,15,0,0">
                             <TextBlock Text="Mother" TextWrapping="Wrap" Margin="10,10,0,0"/>
                             <TextBlock Text="Robinah Gaamuwa" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
+                        </StackPanel>
                     </StackPanel>
-            </StackPanel>
+                </StackPanel>
             </ScrollViewer>
-            </StackPanel>
         </Grid>
     </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True">
+            <shell:ApplicationBar.Buttons>
+                <shell:ApplicationBarIconButton IconUri="/Assets/Icons/edit.png" Text="edit"/>
+            </shell:ApplicationBar.Buttons>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>

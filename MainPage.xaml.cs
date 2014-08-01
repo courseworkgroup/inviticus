@@ -8,11 +8,14 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using PanoramaApp1.Resources;
+using System.Windows.Media.Imaging;
+using System.Windows.Media;
 
 namespace PanoramaApp1
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        
         // Constructor
         public MainPage()
         {
@@ -21,7 +24,7 @@ namespace PanoramaApp1
             // Set the data context of the listbox control to the sample data
             DataContext = App.ViewModel;
 
-            BuildLocalizedApplicationBar();
+            //BuildLocalizedApplicationBar();
         }
 
         // Load data for the ViewModel Items
@@ -33,23 +36,23 @@ namespace PanoramaApp1
             }
         }
 
-        public void BuildLocalizedApplicationBar()
-        {
-            ApplicationBar = new ApplicationBar();
-            ApplicationBar.Mode= ApplicationBarMode.Minimized;
-           // ApplicationBarIconButton add = new ApplicationBarIconButton();
-           // add.IconUri = new Uri("/Assets/Icons/add.png", UriKind.RelativeOrAbsolute);
-           // ApplicationBar.Buttons.Add(add);
+        //public void BuildLocalizedApplicationBar()
+        //{
+        //    ApplicationBar = new ApplicationBar();
+        //    ApplicationBar.Mode= ApplicationBarMode.Minimized;
+        //   // ApplicationBarIconButton add = new ApplicationBarIconButton();
+        //   // add.IconUri = new Uri("/Assets/Icons/add.png", UriKind.RelativeOrAbsolute);
+        //   // ApplicationBar.Buttons.Add(add);
 
-           // add.Click += add_Click;
+        //   // add.Click += add_Click;
 
-            ApplicationBarMenuItem settings = new ApplicationBarMenuItem();
-            settings.Text = AppResources.AppBarSettings;
-            ApplicationBar.MenuItems.Add(settings);
+        //    ApplicationBarMenuItem settings = new ApplicationBarMenuItem();
+        //    settings.Text = AppResources.AppBarSettings;
+        //    ApplicationBar.MenuItems.Add(settings);
 
-            settings.Click += settings_Click;
+        //    settings.Click += settings_Click;
 
-        }
+        //}
 
        // void add_Click(object sender, EventArgs e)
        // {
@@ -72,6 +75,16 @@ namespace PanoramaApp1
             NavigationService.Navigate(new Uri("/Profile.xaml", UriKind.RelativeOrAbsolute));
         }
 
-        
+        public void background(BitmapImage bitmapImage)
+        {
+            ImageBrush imageBrush = new ImageBrush();
+            imageBrush.ImageSource = bitmapImage;
+            this.panorama.Background = imageBrush;
+        }
+
+        private void Charts_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Charts.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }

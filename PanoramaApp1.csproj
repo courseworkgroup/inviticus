@@ -93,6 +93,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Charts.xaml.cs">
+      <DependentUpon>Charts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Immunization.xaml.cs">
       <DependentUpon>Immunization.xaml</DependentUpon>
     </Compile>
@@ -127,6 +130,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Charts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Immunization.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -178,7 +185,9 @@
     <Content Include="Assets\Icons\DarkIcons.dll" />
     <Content Include="Assets\Icons\delete.png" />
     <Content Include="Assets\Icons\download.png" />
-    <Content Include="Assets\Icons\edit.png" />
+    <Content Include="Assets\Icons\edit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Icons\favs.addto.png" />
     <Content Include="Assets\Icons\favs.png" />
     <Content Include="Assets\Icons\feature.alarm.png" />
@@ -207,6 +216,7 @@
     <Content Include="Assets\Icons\transport.play.png" />
     <Content Include="Assets\Icons\transport.rew.png" />
     <Content Include="Assets\Icons\upload.png" />
+    <Content Include="Assets\Photo0277_edited.jpg" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

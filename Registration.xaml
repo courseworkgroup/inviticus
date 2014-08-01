@@ -32,22 +32,22 @@
                 <StackPanel>
                     <StackPanel>
                         <TextBlock Text="Baby Name" Style="{StaticResource PhoneTextLargeStyle}"/>
-                        <TextBox Name="babyname" Background="Transparent" BorderBrush="{StaticResource PhoneBorderBrush}" Foreground="{StaticResource PhoneContrastBackgroundBrush}"/>
+                        <TextBox Name="babyname" BorderBrush="{StaticResource PhoneBorderBrush}" Foreground="{StaticResource PhoneContrastBackgroundBrush}"/>
                     </StackPanel>
                     <StackPanel Margin="0,12,0,0">
                         <TextBlock Text="Baby Photo" Style="{StaticResource PhoneTextLargeStyle}"/>
                         <StackPanel Orientation="Horizontal">
-                            <Image Width="200" Height="200"/>
-                            <Button Name="choosephoto" BorderThickness="3" HorizontalAlignment="Right" Height="70" Width="200" Margin="20,0,0,0" Content="Choose photo" />
+                            <Image Width="200" Height="200" Name="babyphoto"/>
+                            <Button Name="choosephoto" BorderThickness="3" HorizontalAlignment="Right" Height="70" Width="200" Margin="20,0,0,0" Content="Choose photo" Click="choosephoto_Click" />
                         </StackPanel>
                     </StackPanel>
                     <StackPanel Margin="0,12,0,0">
                         <TextBlock Text="Date of Birth" Style="{StaticResource PhoneTextLargeStyle}"/>
-                        <TextBox Name="dob" Background="Transparent" BorderBrush="{StaticResource PhoneBorderBrush}"/>
+                        <TextBox Name="dob" BorderBrush="{StaticResource PhoneBorderBrush}"/>
                     </StackPanel>
                     <StackPanel Margin="0,12,0,0">
                         <TextBlock Text="Weight at birth" Style="{StaticResource PhoneTextLargeStyle}"/>
-                        <TextBox Background="Transparent" BorderBrush="{StaticResource PhoneBorderBrush}"/>
+                        <TextBox Name="weightAtBirth" BorderBrush="{StaticResource PhoneBorderBrush}"/>
                     </StackPanel>
                     <StackPanel Margin="0,12,0,0">
                         <TextBlock Text="Sex" Style="{StaticResource PhoneTextLargeStyle}"/>
@@ -60,20 +60,23 @@
                     </StackPanel>
                     <StackPanel Margin="0,12,0,0">
                         <TextBlock Text="Father's Names" Style="{StaticResource PhoneTextLargeStyle}"/>
-                        <TextBox Name="fathersname" Background="Transparent" BorderBrush="{StaticResource PhoneBorderBrush}"/>
+                        <TextBox Name="fathersname" BorderBrush="{StaticResource PhoneBorderBrush}"/>
                     </StackPanel>
                     <StackPanel Margin="0,12,0,0">
                         <TextBlock Text="Mother's Name" Style="{StaticResource PhoneTextLargeStyle}" />
-                        <TextBox Name="mothersname" Background="Transparent" BorderBrush="{StaticResource PhoneBorderBrush}"/>
+                        <TextBox Name="mothersname" BorderBrush="{StaticResource PhoneBorderBrush}"/>
                     </StackPanel>
-                    <StackPanel Margin="0,12,-12,0" Orientation="Horizontal" >
-                        <Button Name="save" BorderThickness="3" HorizontalAlignment="Left" Height="70" Width="170" Margin="20,0,0,0" Content="Save" />
-                        <Button Name="cancel" BorderThickness="3" HorizontalAlignment="Right" Height="70" Width="170" Margin="0,0,20,0" Content="Cancel" />
-                    </StackPanel>
-
                 </StackPanel>
             </ScrollViewer>
         </Grid>
     </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True">
+            <shell:ApplicationBar.Buttons>
+                <shell:ApplicationBarIconButton IconUri="/Assets/Icons/save.png" Text="save"/>
+                <shell:ApplicationBarIconButton IconUri="/Assets/Icons/cancel.png" Text="cancel"/>
+            </shell:ApplicationBar.Buttons>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>
