@@ -1,6 +1,7 @@
-﻿<xapCache source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\PanoramaApp1_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="01/08/2014 16:41:31">
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\PanoramaApp1.dll" archivePath="PanoramaApp1.dll" lastWriteTime="01/08/2014 16:41:30" />
+﻿<xapCache source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\PanoramaApp1_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="04/08/2014 11:49:28">
+  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\PanoramaApp1.dll" archivePath="PanoramaApp1.dll" lastWriteTime="04/08/2014 11:49:26" />
   <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="05/07/2014 12:57:20" />
+  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="05/07/2014 12:57:20" />
   <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\add.png" archivePath="Assets\Icons\add.png" lastWriteTime="08/07/2014 18:43:12" />
   <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\back.png" archivePath="Assets\Icons\back.png" lastWriteTime="08/07/2014 18:43:12" />
   <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\basecircle.png" archivePath="Assets\Icons\basecircle.png" lastWriteTime="08/07/2014 18:43:12" />
@@ -43,10 +44,9 @@
   <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="05/07/2014 12:57:20" />
   <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="05/07/2014 12:57:20" />
   <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="05/07/2014 12:57:20" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="05/07/2014 12:57:20" />
   <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="05/07/2014 12:57:20" />
   <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="08/07/2014 18:09:51" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="05/07/2014 12:57:20" />
+  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="04/08/2014 11:31:28" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="01/01/2013 21:57:00" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="22/07/2014 11:26:34" />
+  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="04/08/2014 11:39:41" />
 </xapCache>

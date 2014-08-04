@@ -22,33 +22,36 @@
             <phone:PivotItem Header="general">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="2*"/>
                     </Grid.RowDefinitions>
-                    <ScrollViewer Height="500">
-                    <StackPanel>
+                   
                         <StackPanel>
                             <TextBlock Text="current profiles" TextWrapping="NoWrap" Style="{StaticResource PhoneTextLargeStyle}" />
                             <TextBlock Text="tap and hold a profile to delete it" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
-
-                            <phone:LongListSelector ItemsSource="{Binding Items4}">
-                                <phone:LongListSelector.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackPanel Orientation="Horizontal" Margin="0,12,0,0">
-                                            <Border Width="99" Height="99" Background="{StaticResource PhoneAccentBrush}"/>
-                                            <TextBlock Text="{Binding Text}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="40,0,0,0" Style="{StaticResource PhoneTextTitle3Style}"/>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </phone:LongListSelector.ItemTemplate>
-                            </phone:LongListSelector>
-
                         </StackPanel>
-                        <StackPanel Grid.Row="1">
+                    <ScrollViewer Grid.Row="1">
+                        <StackPanel>
+                        <phone:LongListSelector ItemsSource="{Binding Items4}">
+                                    <phone:LongListSelector.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" Margin="0,12,0,0">
+                                                <Border Width="99" Height="99" Background="{StaticResource PhoneAccentBrush}"/>
+                                                <TextBlock Text="{Binding Text}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="40,0,0,0" Style="{StaticResource PhoneTextTitle3Style}"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </phone:LongListSelector.ItemTemplate>
+                                </phone:LongListSelector>
+
+                            </StackPanel>
+                    </ScrollViewer>
+                    <StackPanel Grid.Row="2">
                             <TextBlock Text="registration" Style="{StaticResource PhoneTextLargeStyle}"  Margin="15,20,0,0" Tap="TextBlock_Tap"/>
                             <Button Name="changeAppBackground" Background="{StaticResource PhoneAccentBrush}" Content="Change app background" Margin="0,20,0,0" Click="changeAppBackground_Click"/>
                         </StackPanel>
-                        </StackPanel>
-                    </ScrollViewer>
+                        
+                    
                 </Grid>
             </phone:PivotItem>
 
