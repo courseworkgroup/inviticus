@@ -1,51 +1,53 @@
-﻿<xapCache source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\PanoramaApp1_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="14/07/2014 14:31:05">
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\obj\Debug\PanoramaApp1.dll" archivePath="PanoramaApp1.dll" lastWriteTime="14/07/2014 14:31:03" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="05/07/2014 12:57:20" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\add.png" archivePath="Assets\Icons\add.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\back.png" archivePath="Assets\Icons\back.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\basecircle.png" archivePath="Assets\Icons\basecircle.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\cancel.png" archivePath="Assets\Icons\cancel.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\check.png" archivePath="Assets\Icons\check.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\close.png" archivePath="Assets\Icons\close.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\DarkIcons.dll" archivePath="Assets\Icons\DarkIcons.dll" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\delete.png" archivePath="Assets\Icons\delete.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\download.png" archivePath="Assets\Icons\download.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\edit.png" archivePath="Assets\Icons\edit.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\favs.addto.png" archivePath="Assets\Icons\favs.addto.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\favs.png" archivePath="Assets\Icons\favs.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.alarm.png" archivePath="Assets\Icons\feature.alarm.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.calendar.png" archivePath="Assets\Icons\feature.calendar.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.camera.png" archivePath="Assets\Icons\feature.camera.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.email.png" archivePath="Assets\Icons\feature.email.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.phone.png" archivePath="Assets\Icons\feature.phone.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.search.png" archivePath="Assets\Icons\feature.search.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.settings.png" archivePath="Assets\Icons\feature.settings.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.video.png" archivePath="Assets\Icons\feature.video.png" lastWriteTime="08/07/2014 18:43:12" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\folder.png" archivePath="Assets\Icons\folder.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\like.png" archivePath="Assets\Icons\like.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\microphone.png" archivePath="Assets\Icons\microphone.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\minus.png" archivePath="Assets\Icons\minus.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\new.png" archivePath="Assets\Icons\new.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\next.png" archivePath="Assets\Icons\next.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\overflowdots.png" archivePath="Assets\Icons\overflowdots.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\questionmark.png" archivePath="Assets\Icons\questionmark.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\refresh.png" archivePath="Assets\Icons\refresh.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\save.png" archivePath="Assets\Icons\save.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\share.png" archivePath="Assets\Icons\share.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\stop.png" archivePath="Assets\Icons\stop.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\sync.png" archivePath="Assets\Icons\sync.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\transport.ff.png" archivePath="Assets\Icons\transport.ff.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\transport.pause.png" archivePath="Assets\Icons\transport.pause.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\transport.play.png" archivePath="Assets\Icons\transport.play.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\transport.rew.png" archivePath="Assets\Icons\transport.rew.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Icons\upload.png" archivePath="Assets\Icons\upload.png" lastWriteTime="08/07/2014 18:43:13" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="05/07/2014 12:57:20" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="05/07/2014 12:57:20" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="05/07/2014 12:57:20" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="05/07/2014 12:57:20" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="08/07/2014 18:09:51" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="05/07/2014 12:57:20" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="05/07/2014 12:57:20" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="01/01/2013 21:57:00" />
-  <file source="C:\Users\Samuel Gaamuwa\documents\visual studio 2013\Projects\PanoramaApp1\PanoramaApp1\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="08/07/2014 18:09:51" />
+﻿<xapCache source="D:\PanoramaApp1\PanoramaApp1\Bin\Debug\PanoramaApp1_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="08/08/2014 09:40:57">
+  <file source="D:\PanoramaApp1\PanoramaApp1\obj\Debug\PanoramaApp1.dll" archivePath="PanoramaApp1.dll" lastWriteTime="08/08/2014 09:40:55" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="05/07/2014 12:57:22" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="05/07/2014 12:57:22" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\add.png" archivePath="Assets\Icons\add.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\back.png" archivePath="Assets\Icons\back.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\basecircle.png" archivePath="Assets\Icons\basecircle.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\cancel.png" archivePath="Assets\Icons\cancel.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\check.png" archivePath="Assets\Icons\check.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\close.png" archivePath="Assets\Icons\close.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\DarkIcons.dll" archivePath="Assets\Icons\DarkIcons.dll" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\delete.png" archivePath="Assets\Icons\delete.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\download.png" archivePath="Assets\Icons\download.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\edit.png" archivePath="Assets\Icons\edit.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\favs.addto.png" archivePath="Assets\Icons\favs.addto.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\favs.png" archivePath="Assets\Icons\favs.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.alarm.png" archivePath="Assets\Icons\feature.alarm.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.calendar.png" archivePath="Assets\Icons\feature.calendar.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.camera.png" archivePath="Assets\Icons\feature.camera.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.email.png" archivePath="Assets\Icons\feature.email.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.phone.png" archivePath="Assets\Icons\feature.phone.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.search.png" archivePath="Assets\Icons\feature.search.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.settings.png" archivePath="Assets\Icons\feature.settings.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\feature.video.png" archivePath="Assets\Icons\feature.video.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\folder.png" archivePath="Assets\Icons\folder.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\like.png" archivePath="Assets\Icons\like.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\microphone.png" archivePath="Assets\Icons\microphone.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\minus.png" archivePath="Assets\Icons\minus.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\new.png" archivePath="Assets\Icons\new.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\next.png" archivePath="Assets\Icons\next.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\overflowdots.png" archivePath="Assets\Icons\overflowdots.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\questionmark.png" archivePath="Assets\Icons\questionmark.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\refresh.png" archivePath="Assets\Icons\refresh.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\save.png" archivePath="Assets\Icons\save.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\share.png" archivePath="Assets\Icons\share.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\stop.png" archivePath="Assets\Icons\stop.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\sync.png" archivePath="Assets\Icons\sync.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\transport.ff.png" archivePath="Assets\Icons\transport.ff.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\transport.pause.png" archivePath="Assets\Icons\transport.pause.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\transport.play.png" archivePath="Assets\Icons\transport.play.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\transport.rew.png" archivePath="Assets\Icons\transport.rew.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Icons\upload.png" archivePath="Assets\Icons\upload.png" lastWriteTime="08/07/2014 18:43:14" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Photo0277_edited.jpg" archivePath="Assets\Photo0277_edited.jpg" lastWriteTime="24/07/2014 23:35:06" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="05/07/2014 12:57:22" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="05/07/2014 12:57:22" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="05/07/2014 12:57:22" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="05/08/2014 12:53:43" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="05/07/2014 12:57:22" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="08/07/2014 18:09:52" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="01/01/2013 18:57:00" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\IconicTileMediumLarge.png" archivePath="IconicTileMediumLarge.png" lastWriteTime="04/08/2014 11:31:30" />
+  <file source="D:\PanoramaApp1\PanoramaApp1\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="05/08/2014 12:55:44" />
 </xapCache>

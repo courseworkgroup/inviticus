@@ -28,38 +28,80 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <StackPanel>
-                <Image Source="assets/panoramabackground.png" Height="200" Width="200" HorizontalAlignment="Left" Margin="12"/>
-                <ScrollViewer>
+            <ScrollViewer>
+           <!-- <StackPanel>
+                    <Image Source="assets/panoramabackground.png" Height="200" Width="200" HorizontalAlignment="Left" Margin="12"/>
                     <StackPanel>
-                    <StackPanel>
-                        <TextBlock Text="Name" TextWrapping="Wrap" Margin="10,10,0,0"/>
-                        <TextBlock Text="Abigail Kisakye" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
-                    </StackPanel>
-                    <StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="Name" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                            <TextBlock Text="Abigail Kisakye" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
+                        </StackPanel>
+                        <StackPanel Margin="0,15,0,0">
                             <TextBlock Text="Date of Birth" TextWrapping="Wrap" Margin="10,10,0,0"/>
                             <TextBlock Text="12/05/2014" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
-                    </StackPanel>
-                    <StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="0,15,0,0">
                             <TextBlock Text="Weight at Birth" TextWrapping="Wrap" Margin="10,10,0,0"/>
                             <TextBlock Text="2.6 Kgs" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
-                    </StackPanel>
-                    <StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="0,15,0,0">
                             <TextBlock Text="Sex" TextWrapping="Wrap" Margin="10,10,0,0"/>
                             <TextBlock Text="Female" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
-                    </StackPanel>
-                    <StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="0,15,0,0">
                             <TextBlock Text="Father" TextWrapping="Wrap" Margin="10,10,0,0"/>
                             <TextBlock Text="David Gaamuwa" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
-                    </StackPanel>
-                    <StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="0,15,0,0">
                             <TextBlock Text="Mother" TextWrapping="Wrap" Margin="10,10,0,0"/>
                             <TextBlock Text="Robinah Gaamuwa" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
+                        </StackPanel>
                     </StackPanel>
-            </StackPanel>
+                </StackPanel>-->
+
+                <StackPanel>
+                    <Image  Height="200" Width="200" HorizontalAlignment="Left" Margin="12">
+                        <Image.Source>
+                            <BitmapImage UriSource="{Binding Baby.PhotoURI}"
+                                 CreateOptions="BackgroundCreation" DecodePixelHeight="200" DecodePixelWidth="150" />
+                        </Image.Source>
+                    </Image>
+                    <TextBlock Text="{Binding Baby.PhotoURI}" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                    <StackPanel>
+                        <TextBlock Text="Name" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                        <TextBlock Name="babyName" Text="{Binding Baby.Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
+                    </StackPanel>
+                    <StackPanel Margin="0,15,0,0">
+                        <TextBlock Text="Date of Birth" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                        <TextBlock Name="birthDate" Text="{Binding Baby.BirthDate}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
+                    </StackPanel>                    
+                    <StackPanel Margin="0,15,0,0">
+                        <TextBlock Text="Sex" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                        <TextBlock Name="Gender" Text="{Binding Baby.Gender}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
+                    </StackPanel>
+                    <StackPanel Margin="0,15,0,0">
+                        <TextBlock Text="Father" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                        <TextBlock Name="fatherName" Text="{Binding Baby.FatherName}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
+                    </StackPanel>
+                    <!--<StackPanel Margin="0,15,0,0">
+                        <TextBlock Text="Mother" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                        <TextBlock Name="mothersName" Text="{Binding Baby.MothersName}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
+                    </StackPanel>-->
+                    <StackPanel Margin="0,15,0,0">
+                        <TextBlock Text="Mother" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                        <TextBlock Name="motherName" Text="{Binding Baby.MotherName}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
+                    </StackPanel>
+                </StackPanel>
             </ScrollViewer>
-            </StackPanel>
         </Grid>
     </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar >
+        <shell:ApplicationBar IsVisible="True" Opacity="12">
+            <shell:ApplicationBar.Buttons>
+                <shell:ApplicationBarIconButton IconUri="/Assets/Icons/feature.settings.png" Text="settings" Click="settings_Click"/>
+            </shell:ApplicationBar.Buttons>
+        </shell:ApplicationBar>
+
+    </phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>

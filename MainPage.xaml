@@ -37,10 +37,9 @@
          -->
 
          <!--Panorama control-->
-        <phone:Panorama Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}">
+        <phone:Panorama Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Name="panorama">
             <phone:Panorama.Background>
-               <SolidColorBrush Color="Transparent"/>
-                <!--<ImageBrush ImageSource="/PanoramaApp1;component/Assets/PanoramaBackground.png"/>-->
+                <ImageBrush ImageSource="/Assets/Photo0277_edited.jpg" Stretch="Fill"/>
             </phone:Panorama.Background>
 
             <!--Panorama item one-->
@@ -55,11 +54,18 @@
                         </DataTemplate>
                     </phone:LongListSelector.ItemTemplate>
                 </phone:LongListSelector>-->
-                <StackPanel>
-                    <TextBlock Text="profile" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Profile_Tap"/>
-                    <TextBlock Text="immunizations" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Immunization_Tap" />
-                    <TextBlock Text="development charts" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}"  />
-                </StackPanel>
+                <ScrollViewer Grid.Row="1">
+                    <StackPanel Grid.Row="1">
+                        <TextBlock Text="profile" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Profile_Tap"/>
+                        <TextBlock Text="tap to view the baby's profile" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                        <TextBlock Text="weight" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Weight_Tap"/>
+                        <TextBlock Text="tap to add weight for the child" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                        <TextBlock Text="immunizations" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Tap="Immunization_Tap" />
+                        <TextBlock Text="tap to view the immunization status" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                        <TextBlock Text="development charts" TextWrapping="Wrap" Style="{StaticResource PhoneTextContrastStyle}" FontSize="{StaticResource PhoneFontSizeExtraLarge}" />
+                        <TextBlock Text="tap to view the weight and development charts" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                    </StackPanel>
+                </ScrollViewer>
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
@@ -130,14 +136,12 @@
         <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
 
     </Grid>
-   <!-- <phone:PhoneApplicationPage.ApplicationBar >
-        <shell:ApplicationBar IsVisible="True" Opacity="12" Mode="Minimized">
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="settings"/>
-                <shell:ApplicationBarMenuItem Text="about"/>
-                <shell:ApplicationBarMenuItem Text="registration"/>
-            </shell:ApplicationBar.MenuItems>
+    <phone:PhoneApplicationPage.ApplicationBar >
+        <shell:ApplicationBar IsVisible="True" Opacity="12">
+            <shell:ApplicationBar.Buttons>
+                <shell:ApplicationBarIconButton IconUri="/Assets/Icons/feature.settings.png" Text="settings" Click="settings_Click"/>
+            </shell:ApplicationBar.Buttons>
         </shell:ApplicationBar>
-                              
-    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+    </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>

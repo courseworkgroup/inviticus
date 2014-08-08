@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
+using System.IO;
+using System.IO.IsolatedStorage;
 using System.Resources;
 using System.Windows;
 using System.Windows.Markup;
@@ -15,6 +17,9 @@ namespace PanoramaApp1
 {
     public partial class App : Application
     {
+
+        SharedInformation info = SharedInformation.getInstance();
+
         private static MainViewModel viewModel = null;
 
         /// <summary>
@@ -82,6 +87,7 @@ namespace PanoramaApp1
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
+            info.retrieveFromIsolatedStorage();
         }
 
         // Code to execute when the application is activated (brought to foreground)
@@ -93,6 +99,14 @@ namespace PanoramaApp1
             {
                 App.ViewModel.LoadData();
             }
+            if (!App.ViewModel.IsBabyDataLoaded)
+            {
+                App.ViewModel.LoadBabiesData();
+            }
+
+            info.retrieveFromIsolatedStorage();
+  
+
         }
 
         // Code to execute when the application is deactivated (sent to background)
@@ -100,12 +114,16 @@ namespace PanoramaApp1
         private void Application_Deactivated(object sender, DeactivatedEventArgs e)
         {
             // Ensure that required application state is persisted here.
+            // If there is data in the application member variable...
+            
         }
 
         // Code to execute when the application is closing (eg, user hit Back)
         // This code will not execute when the application is deactivated
         private void Application_Closing(object sender, ClosingEventArgs e)
         {
+            // The application will not be tombstoned, so save only to isolated storage.
+            
         }
 
         // Code to execute if a navigation fails

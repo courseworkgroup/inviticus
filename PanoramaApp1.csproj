@@ -90,9 +90,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AddWeight.xaml.cs">
+      <DependentUpon>AddWeight.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BabyDataContext.cs" />
     <Compile Include="Immunization.xaml.cs">
       <DependentUpon>Immunization.xaml</DependentUpon>
     </Compile>
@@ -103,6 +107,8 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Baby.cs" />
+    <Compile Include="Model\Weight.cs" />
     <Compile Include="NavigatedEventArgs.cs" />
     <Compile Include="Profile.xaml.cs">
       <DependentUpon>Profile.xaml</DependentUpon>
@@ -119,14 +125,23 @@
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SharedInformation.cs" />
+    <Compile Include="ViewModels\BabyViewModel.cs" />
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="WeightPage.xaml.cs">
+      <DependentUpon>WeightPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="AddWeight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Immunization.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -155,6 +170,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WeightPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
@@ -164,6 +183,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="IconicTileMediumLarge.png" />
     <Resource Include="Assets\PanoramaBackground.png" />
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\ApplicationIcon.png">
@@ -178,7 +198,9 @@
     <Content Include="Assets\Icons\DarkIcons.dll" />
     <Content Include="Assets\Icons\delete.png" />
     <Content Include="Assets\Icons\download.png" />
-    <Content Include="Assets\Icons\edit.png" />
+    <Content Include="Assets\Icons\edit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Icons\favs.addto.png" />
     <Content Include="Assets\Icons\favs.png" />
     <Content Include="Assets\Icons\feature.alarm.png" />
@@ -207,6 +229,7 @@
     <Content Include="Assets\Icons\transport.play.png" />
     <Content Include="Assets\Icons\transport.rew.png" />
     <Content Include="Assets\Icons\upload.png" />
+    <Content Include="Assets\Photo0277_edited.jpg" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -7,25 +7,36 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using PanoramaApp1.ViewModels;
 
 namespace PanoramaApp1
 {
     public partial class Profile : PhoneApplicationPage
     {
+
+        private BabyViewModel _babyViewModel;
+        SharedInformation info = SharedInformation.getInstance();
+        
         public Profile()
         {
             InitializeComponent();
-           // BuildLocalizedApplicationBar();
+           
         }
 
-        //public void BuildLocalizedApplicationBar()
-        //{
-        //    ApplicationBar = new ApplicationBar();
-        //    ApplicationBarIconButton edit = new ApplicationBarIconButton();
-        //    edit.IconUri = new Uri("/Assets/Icons/edit.png", UriKind.RelativeOrAbsolute);
-        //    ApplicationBar.Buttons.Add(edit);
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            int babyid = -1;
+            babyid = info.babyID;
+            _babyViewModel = new BabyViewModel(babyid);
 
+            DataContext = _babyViewModel;
 
-        //}
+        }
+
+        void settings_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Settings.xaml", UriKind.RelativeOrAbsolute));
+        }
+                
     }
 }

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{bead8643-333f-431f-a79e-a9e4e3c28142}" Title="PanoramaApp1" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="PanoramaApp1 author" Description="Sample description" Publisher="PanoramaApp1" PublisherID="{bc2f23d2-6e6f-44cc-86d9-a8b4952161f9}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+  <App xmlns="" ProductID="{bead8643-333f-431f-a79e-a9e4e3c28142}" Title="Inviticus" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="PanoramaApp1 author" Description="An app to replace that immunization card, keep up with your babies development on the go" Publisher="PanoramaApp1" PublisherID="{bc2f23d2-6e6f-44cc-86d9-a8b4952161f9}">
+    <IconPath IsRelative="true" IsResource="false">IconicTileMediumLarge.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
@@ -16,15 +16,15 @@
     <Tokens>
       <PrimaryToken TokenID="PanoramaApp1Token" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">IconicTileMediumLarge.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>PanoramaApp1</Title>
+          <BackgroundImageURI IsRelative="true" IsResource="false">IconicTileMediumLarge.png</BackgroundImageURI>
+          <Title>Inviticus</Title>
           <BackContent></BackContent>
-          <BackBackgroundImageURI></BackBackgroundImageURI>
+          <BackBackgroundImageURI IsRelative="true" IsResource="false"></BackBackgroundImageURI>
           <BackTitle></BackTitle>
-          <DeviceLockImageURI></DeviceLockImageURI>
-          <HasLarge></HasLarge>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+          <HasLarge>false</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>
