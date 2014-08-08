@@ -79,5 +79,24 @@ namespace PanoramaApp1
         
         
     }
+
+    public class List_ClassConverter : IValueConverter
+    {
+        SharedInformation info = SharedInformation.getInstance();
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            Baby MyList_Class = (Baby)value;
+
+            if (MyList_Class.PhotoURI != "ghostbusters-logo.jpg") return info.getBabyPhoto(MyList_Class.PhotoURI);
+                   
+            return "Assets/PanoramaBackground.png";
+
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return null;
+        }
+    }
     
 }

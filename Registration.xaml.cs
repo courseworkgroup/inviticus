@@ -19,6 +19,8 @@ namespace PanoramaApp1
     {
         SharedInformation info = SharedInformation.getInstance();
         PhotoChooserTask photoChooserTask;
+        public string fileName { get; private set; }
+
         public Registration()
         {
             InitializeComponent();
@@ -55,16 +57,15 @@ namespace PanoramaApp1
             if (e.TaskResult == TaskResult.OK)
             {
                 string filePath =  e.OriginalFileName;
-                string fileName = Path.GetFileName(filePath);
-
+                fileName = Path.GetFileName(filePath);
 
                 MessageBox.Show(e.ChosenPhoto.Length.ToString());
                 info.saveBabyPhoto(e.ChosenPhoto, fileName);
 
                 this.babyphoto.Source = info.getBabyPhoto(fileName);
-                babyPhoto.Text = fileName;
-               
+                                
             }
+            
         }
         private BabyViewModel _babyViewModel;
        
@@ -73,6 +74,9 @@ namespace PanoramaApp1
 
         private void ApplicationBarSaveButton_Click(object sender, EventArgs e)
         {
+            if (fileName != null)
+                babyPhoto.Text = fileName;
+
             _babyViewModel.AddNewWeight();
             _babyViewModel.Save();
             NavigationService.Navigate(new Uri("/Settings.xaml?", UriKind.RelativeOrAbsolute));
@@ -85,7 +89,7 @@ namespace PanoramaApp1
         }
 
         private void maleChecked(object sender, RoutedEventArgs e)
-        {
+        {            
             gender.Text = "Male";
         }
 

@@ -36,21 +36,21 @@
                                     Margin="0,0,-12,0"
                                     MaxHeight="350"
                                     ItemsSource="{Binding Babies}" 
-                                    SelectionChanged="llsBabies_SelectionChanged">                                   
+                                    SelectionChanged="llsBabies_SelectionChanged">
+                                        <phone:LongListSelector.Resources>
+                                            <local:List_ClassConverter x:Key="List_ClassConverter"/>
+                                        </phone:LongListSelector.Resources>
                                         <phone:LongListSelector.ItemTemplate>
                                         <DataTemplate>
                                             <StackPanel Margin="0,0,0,17">
                                                 <StackPanel Orientation="Horizontal">
-                                                        <Image  Width="100" Height="100"/>
-                                                        <TextBlock Text="{Binding Id,StringFormat='Id: {0}'}" 
-                                                            TextWrapping="Wrap"
-                                                            MaxWidth="300"
-                                                            Style="{StaticResource PhoneTextLargeStyle}"/>
+                                                        <Image Source="{Binding Converter={StaticResource List_ClassConverter}}" Width="100" Height="100"/>
+                                                        
                                                         <TextBlock Text="{Binding Name,StringFormat='Name: {0}'}" 
                                                         TextWrapping="Wrap"
                                                         MaxWidth="300"
                                                         Style="{StaticResource PhoneTextLargeStyle}"/>
-                                                </StackPanel>
+                                                </StackPanel>                                                
                                             </StackPanel>
                                         </DataTemplate>
                                     </phone:LongListSelector.ItemTemplate>                                    

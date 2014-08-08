@@ -30,6 +30,7 @@ namespace PanoramaApp1
             _babyViewModel = new BabyViewModel(babyid);
 
             DataContext = _babyViewModel;
+            babyPhoto.Source = info.getBabyPhoto(_babyViewModel.Baby.PhotoURI);
 
         }
 

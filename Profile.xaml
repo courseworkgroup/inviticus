@@ -60,13 +60,7 @@
                 </StackPanel>-->
 
                 <StackPanel>
-                    <Image  Height="200" Width="200" HorizontalAlignment="Left" Margin="12">
-                        <Image.Source>
-                            <BitmapImage UriSource="{Binding Baby.PhotoURI}"
-                                 CreateOptions="BackgroundCreation" DecodePixelHeight="200" DecodePixelWidth="150" />
-                        </Image.Source>
-                    </Image>
-                    <TextBlock Text="{Binding Baby.PhotoURI}" TextWrapping="Wrap" Margin="10,10,0,0"/>
+                    <Image Name="babyPhoto" Height="200" Width="200" HorizontalAlignment="Left" Margin="12"/>
                     <StackPanel>
                         <TextBlock Text="Name" TextWrapping="Wrap" Margin="10,10,0,0"/>
                         <TextBlock Name="babyName" Text="{Binding Baby.Name}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32" />
@@ -82,11 +76,7 @@
                     <StackPanel Margin="0,15,0,0">
                         <TextBlock Text="Father" TextWrapping="Wrap" Margin="10,10,0,0"/>
                         <TextBlock Name="fatherName" Text="{Binding Baby.FatherName}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
-                    </StackPanel>
-                    <!--<StackPanel Margin="0,15,0,0">
-                        <TextBlock Text="Mother" TextWrapping="Wrap" Margin="10,10,0,0"/>
-                        <TextBlock Name="mothersName" Text="{Binding Baby.MothersName}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>
-                    </StackPanel>-->
+                    </StackPanel>                    
                     <StackPanel Margin="0,15,0,0">
                         <TextBlock Text="Mother" TextWrapping="Wrap" Margin="10,10,0,0"/>
                         <TextBlock Name="motherName" Text="{Binding Baby.MotherName}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="32"/>

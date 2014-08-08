@@ -64,11 +64,7 @@
                     <StackPanel Margin="0,12,0,0">
                         <TextBlock Text="Father's Names" Style="{StaticResource PhoneTextLargeStyle}"/>
                         <TextBox Name="fatherName" Text="{Binding Baby.FatherName, Mode=TwoWay}" />
-                    </StackPanel>
-                    <!--<StackPanel Margin="0,12,0,0">
-                        <TextBlock Text="Mother's Name" Style="{StaticResource PhoneTextLargeStyle}" />
-                        <TextBox Name="mothersName" Text="{Binding Baby.MothersName, Mode=TwoWay}" />
-                    </StackPanel>-->
+                    </StackPanel>                    
                     <StackPanel Margin="0,12,0,0">
                         <TextBlock Text="Mother's Name" Style="{StaticResource PhoneTextLargeStyle}" />
                         <TextBox Name="motherName" Text="{Binding Baby.MotherName, Mode=TwoWay}"/>
