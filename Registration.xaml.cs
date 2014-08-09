@@ -12,6 +12,7 @@ using Microsoft.Phone.Tasks;
 using System.Windows.Media.Imaging;
 using System.IO.IsolatedStorage;
 using System.IO;
+using System.Windows.Media;
 
 namespace PanoramaApp1
 {
@@ -30,6 +31,10 @@ namespace PanoramaApp1
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            ImageBrush imageBrush = new ImageBrush();
+            imageBrush.ImageSource = info.bitmapImage;
+            LayoutRoot.Background = imageBrush;
+
             int babyid = -1;
             string selectedIndex = "";
             if (NavigationContext.QueryString.TryGetValue("babyid", out selectedIndex))

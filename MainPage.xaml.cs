@@ -17,6 +17,7 @@ namespace PanoramaApp1
     {
         SharedInformation info = SharedInformation.getInstance();
         
+        
         // Constructor
         public MainPage()
         {
@@ -25,15 +26,16 @@ namespace PanoramaApp1
 
             // Set the data context of the listbox control to the sample data
             DataContext = App.ViewModel;
-
-            //BuildLocalizedApplicationBar();
-             
-            
+                        
         }
 
         // Load data for the ViewModel Items
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            ImageBrush imageBrush = new ImageBrush();
+            imageBrush.ImageSource = info.bitmapImage;
+            LayoutRoot.Background = imageBrush;
+
             if (info.babyID == 0)
             {
                 NavigationService.Navigate(new Uri("/Registration.xaml", UriKind.RelativeOrAbsolute));
@@ -44,6 +46,13 @@ namespace PanoramaApp1
                 App.ViewModel.LoadData();
             }
             //change.Text = ToString('{0}', babyid);
+
+            
+            
+
+            ////obj.SetSource(Application.GetResourceStream(new Uri(@"Assets/Photo0277_edited.jpg", UriKind.Relative)).Stream);
+
+
         }
 
         //public void BuildLocalizedApplicationBar()

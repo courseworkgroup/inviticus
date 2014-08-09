@@ -16,6 +16,8 @@ namespace PanoramaApp1.ViewModels
 
         public ObservableCollection<Weight> Weight { get; private set; }
 
+        public Weight BirthWeight { get;  private set; }
+
         private Weight _newWeight;
 
         public Weight NewWeight
@@ -66,8 +68,16 @@ namespace PanoramaApp1.ViewModels
                 .Where(n => n.BabyId == this.Baby.Id)
                 .ToList();
             this.Weight = new ObservableCollection<Weight>(weightList);
+            foreach (Weight weight in weightList)
+            {
+                if (weight.WeightId == 1)
+                {
+                    BirthWeight = weight;
+                }
+            }
         }
 
+        
         public void Save()
         {
             if (Baby.Id <= 0)

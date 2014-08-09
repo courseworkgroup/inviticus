@@ -8,6 +8,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using PanoramaApp1.ViewModels;
+using System.Windows.Media;
 
 namespace PanoramaApp1
 {
@@ -15,6 +16,7 @@ namespace PanoramaApp1
     {
         private BabyViewModel _babyViewModel;
         SharedInformation info = SharedInformation.getInstance();
+        
 
         public WeightPage()
         {
@@ -23,6 +25,12 @@ namespace PanoramaApp1
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+
+            ImageBrush imageBrush = new ImageBrush();
+            imageBrush.ImageSource = info.bitmapImage;
+            LayoutRoot.Background = imageBrush;
+            
+            //imageBrush.ImageSource = new BitmapImage(new Uri(@"Assets/Photo0277_edited.jpg", UriKind.Relative));
             int babyid = -1;
             babyid = info.babyID;
             _babyViewModel = new BabyViewModel(babyid);

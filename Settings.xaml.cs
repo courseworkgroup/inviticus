@@ -14,6 +14,7 @@ using PanoramaApp1.Resources;
 using System.Windows.Input;
 using System.Windows.Data;
 using System.Globalization;
+using System.Windows.Media;
 
 namespace PanoramaApp1
 {
@@ -23,7 +24,7 @@ namespace PanoramaApp1
     {
         SharedInformation info = SharedInformation.getInstance();
         PhotoChooserTask photoChooserTask;
-        MainPage mainpageobject = new MainPage();
+
         public Settings()
         {
             InitializeComponent();
@@ -34,9 +35,12 @@ namespace PanoramaApp1
             App.ViewModel.LoadBabiesData();
         }
 
-        protected  void onNavigateTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            
+            ImageBrush imageBrush = new ImageBrush();
+            imageBrush.ImageSource = info.bitmapImage;
+            LayoutRoot.Background = imageBrush;
+
             App.ViewModel.LoadData();
             //llsBabies.ItemsSource = App.ViewModel.Babies;
             
@@ -53,9 +57,9 @@ namespace PanoramaApp1
             if (e.TaskResult == TaskResult.OK)
             {
                 MessageBox.Show(e.ChosenPhoto.Length.ToString());
-                BitmapImage bitmapImage = new BitmapImage();
-                bitmapImage.SetSource(e.ChosenPhoto);
-                mainpageobject.background(bitmapImage);
+                info.updateBackground(e.ChosenPhoto);
+                
+                
             }
         }
 
@@ -87,9 +91,16 @@ namespace PanoramaApp1
         {
             Baby MyList_Class = (Baby)value;
 
-            if (MyList_Class.PhotoURI != "ghostbusters-logo.jpg") return info.getBabyPhoto(MyList_Class.PhotoURI);
-                   
-            return "Assets/PanoramaBackground.png";
+            //if (MyList_Class.PhotoURI != "ghostbusters-logo.jpg") return info.getBabyPhoto(MyList_Class.PhotoURI);
+
+            try
+            {
+                return info.getBabyPhoto(MyList_Class.PhotoURI);
+            }
+            catch
+            {
+                return "Assets/PanoramaBackground.png";
+            }
 
         }
 

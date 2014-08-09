@@ -38,9 +38,9 @@
 
          <!--Panorama control-->
         <phone:Panorama Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Name="panorama">
-            <phone:Panorama.Background>
-                <ImageBrush ImageSource="/Assets/Photo0277_edited.jpg" Stretch="Fill"/>
-            </phone:Panorama.Background>
+            <!--<phone:Panorama.Background>
+                <ImageBrush xmlns:local="clr-namespace:PanoramaApp1"  ImageSource="/Assets/Photo0277_edited.jpg" Stretch="Fill"/>
+            </phone:Panorama.Background>-->
 
             <!--Panorama item one-->
             <phone:PanoramaItem Header="categories">

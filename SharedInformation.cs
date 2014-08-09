@@ -5,6 +5,7 @@ using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace PanoramaApp1
@@ -14,6 +15,9 @@ namespace PanoramaApp1
         private static SharedInformation instance = new SharedInformation();
 
         public int babyID { get; set; }
+
+        public BitmapImage bitmapImage { get; private set; }
+
         public bool IsApplicationInstancePreserved { get; private set; }
 
         private SharedInformation() { }
@@ -77,6 +81,24 @@ namespace PanoramaApp1
             return bp;
         }
 
+
+        public void setBackGroundImage()
+        {
+            try
+            {
+                bitmapImage = getBabyPhoto("BackgroundImage");
+            }
+            catch
+            {
+                bitmapImage = new BitmapImage(new Uri(@"Assets/Photo0277_edited.jpg", UriKind.Relative));
+            }
+        }
+
+        public void updateBackground(Stream stream)
+        {
+            saveBabyPhoto(stream, "BackgroundImage");
+            setBackGroundImage();
+        }
     }
 
     

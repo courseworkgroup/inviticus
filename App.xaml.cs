@@ -88,6 +88,7 @@ namespace PanoramaApp1
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
             info.retrieveFromIsolatedStorage();
+            info.setBackGroundImage();
         }
 
         // Code to execute when the application is activated (brought to foreground)
@@ -105,7 +106,7 @@ namespace PanoramaApp1
             }
 
             info.retrieveFromIsolatedStorage();
-  
+            info.setBackGroundImage();
 
         }
 

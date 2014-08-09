@@ -7,11 +7,13 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using System.Windows.Media;
 
 namespace PanoramaApp1
 {
     public partial class ImmunizationDetails : PhoneApplicationPage
     {
+        SharedInformation info = SharedInformation.getInstance();
         public ImmunizationDetails()
         {
             InitializeComponent();
@@ -20,6 +22,10 @@ namespace PanoramaApp1
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            ImageBrush imageBrush = new ImageBrush();
+            imageBrush.ImageSource = info.bitmapImage;
+            LayoutRoot.Background = imageBrush;
+
             if (DataContext == null)
             {
                 string selectedIndex = "";

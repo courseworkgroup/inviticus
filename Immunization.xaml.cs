@@ -9,11 +9,13 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using PanoramaApp1.Resources;
 using PanoramaApp1.ViewModels;
+using System.Windows.Media;
 
 namespace PanoramaApp1
 {
     public partial class Immunization : PhoneApplicationPage
-    {   
+    {
+        SharedInformation info = SharedInformation.getInstance();
         //Constructor to initialise the values
         public Immunization()
         {
@@ -24,6 +26,10 @@ namespace PanoramaApp1
 
         protected void onNavigatedTo(NavigatingEventArgs e)
         {
+            ImageBrush imageBrush = new ImageBrush();
+            imageBrush.ImageSource = info.bitmapImage;
+            LayoutRoot.Background = imageBrush;
+
             if (!App.ViewModel.IsDataLoaded)
             {
                 App.ViewModel.LoadData();
