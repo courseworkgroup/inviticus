@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
-using PanoramaApp1.Model;
+using Inviticus.Model;
 
-namespace PanoramaApp1.ViewModels
+namespace Inviticus.ViewModels
 {
     public class BabyViewModel : INotifyPropertyChanged
     {
@@ -70,10 +70,11 @@ namespace PanoramaApp1.ViewModels
             this.Weight = new ObservableCollection<Weight>(weightList);
             foreach (Weight weight in weightList)
             {
-                if (weight.WeightId == 1)
+                if (weight.BabyId == this.Baby.Id && weight.Date.Equals(this.Baby.BirthDate))
                 {
                     BirthWeight = weight;
                 }
+                break;
             }
         }
 

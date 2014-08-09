@@ -9,7 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Windows.Media;
 
-namespace PanoramaApp1
+namespace Inviticus
 {
     public partial class ImmunizationDetails : PhoneApplicationPage
     {

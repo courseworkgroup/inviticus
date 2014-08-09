@@ -7,10 +7,10 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using PanoramaApp1.ViewModels;
+using Inviticus.ViewModels;
 using System.Windows.Media;
 
-namespace PanoramaApp1
+namespace Inviticus
 {
     public partial class WeightPage : PhoneApplicationPage
     {

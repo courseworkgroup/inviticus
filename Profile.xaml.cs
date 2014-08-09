@@ -7,11 +7,11 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using PanoramaApp1.ViewModels;
+using Inviticus.ViewModels;
 using System.Windows.Media.Imaging;
 using System.Windows.Media;
 
-namespace PanoramaApp1
+namespace Inviticus
 {
     public partial class Profile : PhoneApplicationPage
     {
@@ -45,15 +45,8 @@ namespace PanoramaApp1
                 babyPhoto.Source = new BitmapImage(new Uri(@"Assets/PanoramaBackground.png", UriKind.Relative));
             }
 
-            try
-            {
-                birthWeight.Text = _babyViewModel.BirthWeight.BabyWeight; 
-            }
-            catch
-            {
-                birthWeight.Text = "None";
-            }
-           
+            birthWeight.Text = _babyViewModel.BirthWeight.BabyWeight; 
+                     
 
         }
 

@@ -7,11 +7,11 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using PanoramaApp1.Resources;
-using PanoramaApp1.ViewModels;
+using Inviticus.Resources;
+using Inviticus.ViewModels;
 using System.Windows.Media;
 
-namespace PanoramaApp1
+namespace Inviticus
 {
     public partial class Immunization : PhoneApplicationPage
     {
@@ -24,7 +24,7 @@ namespace PanoramaApp1
             DataContext = App.ViewModel;
         }
 
-        protected void onNavigatedTo(NavigatingEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             ImageBrush imageBrush = new ImageBrush();
             imageBrush.ImageSource = info.bitmapImage;

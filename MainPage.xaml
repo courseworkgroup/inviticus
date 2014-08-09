@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="PanoramaApp1.MainPage"
+    x:Class="Inviticus.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -39,7 +39,7 @@
          <!--Panorama control-->
         <phone:Panorama Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Name="panorama">
             <!--<phone:Panorama.Background>
-                <ImageBrush xmlns:local="clr-namespace:PanoramaApp1"  ImageSource="/Assets/Photo0277_edited.jpg" Stretch="Fill"/>
+                <ImageBrush xmlns:local="clr-namespace:Inviticus"  ImageSource="/Assets/Photo0277_edited.jpg" Stretch="Fill"/>
             </phone:Panorama.Background>-->
 
             <!--Panorama item one-->

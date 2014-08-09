@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PanoramaApp1.Model
+namespace Inviticus.Model
 {
     [Table(Name = "Weight")]
     public class Weight : INotifyPropertyChanged, INotifyPropertyChanging

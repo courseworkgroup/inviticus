@@ -1,6 +1,6 @@
-﻿using PanoramaApp1.Resources;
+﻿using Inviticus.Resources;
 
-namespace PanoramaApp1
+namespace Inviticus
 {
     /// <summary>
     /// Provides access to string resources.

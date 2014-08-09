@@ -4,10 +4,10 @@ using System.Data.Linq;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PanoramaApp1.Model;
+using Inviticus.Model;
 
 
-namespace PanoramaApp1
+namespace Inviticus
 {
     public class BabyDataContext : DataContext
     {

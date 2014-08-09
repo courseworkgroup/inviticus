@@ -9,14 +9,14 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Microsoft.Phone.Tasks;
 using System.Windows.Media.Imaging;
-using PanoramaApp1.Model;
-using PanoramaApp1.Resources;
+using Inviticus.Model;
+using Inviticus.Resources;
 using System.Windows.Input;
 using System.Windows.Data;
 using System.Globalization;
 using System.Windows.Media;
 
-namespace PanoramaApp1
+namespace Inviticus
 {
 
 

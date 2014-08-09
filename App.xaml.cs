@@ -10,10 +10,10 @@ using System.Windows.Markup;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using PanoramaApp1.Resources;
-using PanoramaApp1.ViewModels;
+using Inviticus.Resources;
+using Inviticus.ViewModels;
 
-namespace PanoramaApp1
+namespace Inviticus
 {
     public partial class App : Application
     {

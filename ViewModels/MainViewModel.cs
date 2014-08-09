@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
-using PanoramaApp1.Model;
-using PanoramaApp1.Resources;
+using Inviticus.Model;
+using Inviticus.Resources;
 
-namespace PanoramaApp1.ViewModels
+namespace Inviticus.ViewModels
 {
     public class MainViewModel : INotifyPropertyChanged
     {
